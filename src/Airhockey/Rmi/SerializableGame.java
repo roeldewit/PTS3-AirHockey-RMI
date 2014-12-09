@@ -5,10 +5,24 @@
  */
 package Airhockey.Rmi;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+
 /**
  *
  * @author stijn
  */
-public class SerializableGame {
+public class SerializableGame implements Serializable {
 
+    public static final long serialVersionUID = 88L;
+
+    public boolean busy;
+
+    public String description;
+
+    public ArrayList<String> usernames;
+
+    public SerializableGame() {
+        usernames = new ArrayList<>();
+    }
 }
