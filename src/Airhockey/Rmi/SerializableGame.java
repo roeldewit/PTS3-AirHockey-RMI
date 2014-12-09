@@ -21,6 +21,8 @@ public class SerializableGame implements Serializable {
     public boolean busy;
 
     public String description;
+    
+    public String hostIP;
 
     public ArrayList<String> usernames;
 
