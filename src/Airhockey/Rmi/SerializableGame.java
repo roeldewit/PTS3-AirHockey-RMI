@@ -16,6 +16,8 @@ public class SerializableGame implements Serializable {
 
     public static final long serialVersionUID = 88L;
 
+    public int id;
+
     public boolean busy;
 
     public String description;
