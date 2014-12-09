@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author stijn
  */
-public class Location implements Serializable {
+public class Location extends  GameData implements Serializable {
 
     public String type;
 
