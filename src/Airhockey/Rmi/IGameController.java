@@ -8,10 +8,6 @@ import java.rmi.RemoteException;
  */
 public interface IGameController extends java.rmi.Remote {
 
-    float getPuckPositionX() throws RemoteException;
-
-    float getPuckPositionY() throws RemoteException;
-    
-    
+    public int GetPlayerNr(String username);
 
 }

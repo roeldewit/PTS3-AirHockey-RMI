@@ -12,10 +12,6 @@ package Airhockey.Rmi;
  */
 public interface IControlPlayer1 {
 
-    float getPuckPositionX();
-
-    float getPuckPositionY();
-
     void movePlayer1BatDown();
 
     void movePlayer1BatUp();

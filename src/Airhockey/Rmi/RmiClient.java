@@ -69,13 +69,6 @@ public class RmiClient {
         } else {
             System.out.println("Client: Game controller is null pointer");
         }
-
-        try {
-            System.out.println(gameController.getPuckPositionX());
-            System.out.println(gameController.getPuckPositionY());
-        } catch (RemoteException ex) {
-            System.out.println(ex.getMessage());
-        }
     }
 
     // Print contents of registry
