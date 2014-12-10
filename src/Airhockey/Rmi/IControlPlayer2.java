@@ -10,10 +10,12 @@ package Airhockey.Rmi;
  *
  * @author stijn
  */
-public interface IControlPlayer2 {
+public interface IControlPlayer2 extends IGameController{
 
     void movePlayer2BatDown();
 
     void movePlayer2BatUp();
+    
+    void stopPlayer2Bat();
     
 }

@@ -7,13 +7,10 @@ package Airhockey.Rmi;
 
 /**
  *
- * @author stijn
+ * @author pieper126
  */
-public interface IControlPlayer1 extends IGameController {
+public interface IChatController extends java.rmi.Remote{
 
-    void movePlayer1BatDown();
-
-    void movePlayer1BatUp();
-
-    void stopPlayer1Bat();
+    public void writeLine(String username, String Text);
+    
 }

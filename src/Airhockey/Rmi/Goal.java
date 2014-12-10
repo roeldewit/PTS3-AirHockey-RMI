@@ -18,9 +18,12 @@ public class Goal extends GameData implements Serializable{
     public int madeBy;
 
     public int against;
+    
+    public int round;
 
-    public Goal(int madeBy, int against) {
+    public Goal(int madeBy, int against, int round) {
         this.madeBy = madeBy;
         this.against = against;
+        this.round = round;
     }
 }
