@@ -21,12 +21,17 @@ public class SerializableGame implements Serializable {
     public boolean busy;
 
     public String description;
-    
+
     public String hostIP;
 
     public ArrayList<String> usernames;
 
-    public SerializableGame() {
+    public SerializableGame(int id, String description, String hostIP, String username) {
+        this.id = id;
+        this.description = description;
+        this.hostIP = hostIP;
+
         usernames = new ArrayList<>();
+        usernames.add(username);
     }
 }
