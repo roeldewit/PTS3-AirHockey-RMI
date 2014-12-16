@@ -16,7 +16,7 @@ public interface IMainLobby {
 
     ArrayList<SerializableGame> getWaitingGames();
 
-    SerializableGame joinGame(int id);
+    SerializableGame joinGame(int id, String username);
 
     void startGame(SerializableGame game);
 
