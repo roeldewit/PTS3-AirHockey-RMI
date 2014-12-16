@@ -16,7 +16,7 @@ public class SerializableChatBox implements Serializable {
         
     public static final long serialVersionUID = 44L;
     
-    private ArrayList<SerializableChatBoxLine> lines;
+    public ArrayList<SerializableChatBoxLine> lines;
 
     public SerializableChatBox() {
         lines = new ArrayList<>();
@@ -24,5 +24,11 @@ public class SerializableChatBox implements Serializable {
     
     public void writeline(String text, String Player){
         lines.add(new SerializableChatBoxLine(Player, text));
+    }
+    
+    public SerializableChatBox getSerializableChatBoxWithTenLastLines(){
+        SerializableChatBox serializableChatBox = new SerializableChatBox();
+        serializableChatBox.lines = new ArrayList<>(this.lines.subList(this.lines.size() - 21, this.lines.size() - 1));
+        return  serializableChatBox;
     }
 }
