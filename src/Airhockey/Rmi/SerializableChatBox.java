@@ -22,8 +22,10 @@ public class SerializableChatBox implements Serializable {
         lines = new ArrayList<>();
     }
     
-    public void writeline(String text, String Player){
-        lines.add(new SerializableChatBoxLine(Player, text));
+    public SerializableChatBoxLine writeline(String text, String Player){
+        SerializableChatBoxLine serializableChatBoxLine = new SerializableChatBoxLine(Player, text);
+        lines.add(serializableChatBoxLine);
+        return serializableChatBoxLine;
     }
     
     public SerializableChatBox getSerializableChatBoxWithTenLastLines(){

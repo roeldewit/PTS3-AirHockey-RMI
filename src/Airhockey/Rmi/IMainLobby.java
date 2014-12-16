@@ -19,5 +19,7 @@ public interface IMainLobby {
     SerializableGame joinGame(int id, String username);
 
     void startGame(SerializableGame game);
+    
+    void WriteLine(String text, String username);
 
 }
