@@ -8,6 +8,6 @@ import java.rmi.RemoteException;
  */
 public interface IGameController extends java.rmi.Remote {
   
-    public int getPlayerNumber(String username);
+    public int getPlayerNumber(String username) throws RemoteException;
 
 }

@@ -6,16 +6,18 @@
 
 package Airhockey.Rmi;
 
+import java.rmi.RemoteException;
+
 /**
  *
  * @author stijn
  */
 public interface IControlPlayer2 extends IGameController{
 
-    void movePlayer2BatDown();
+    void movePlayer2BatDown() throws RemoteException;
 
-    void movePlayer2BatUp();
+    void movePlayer2BatUp() throws RemoteException;
     
-    void stopPlayer2Bat();
+    void stopPlayer2Bat() throws RemoteException;
     
 }
