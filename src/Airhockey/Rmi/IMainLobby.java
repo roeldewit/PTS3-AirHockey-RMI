@@ -1,25 +1,27 @@
 package Airhockey.Rmi;
 
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 
 /**
  *
  * @author Roel
  */
-public interface IMainLobby {
+public interface IMainLobby extends Remote{
 
-    void addWaitingGame(String description, String hostIP, String username);
+    void addWaitingGame(String description, String hostIP, String username) throws RemoteException;
 
-    ArrayList<SerializableGame> getBusyGames();
+    ArrayList<SerializableGame> getBusyGames() throws RemoteException;
 
-    SerializableChatBox getChatBox();
+    SerializableChatBox1 getChatBox() throws RemoteException;
 
-    ArrayList<SerializableGame> getWaitingGames();
+    ArrayList<SerializableGame> getWaitingGames() throws RemoteException;
 
-    SerializableGame joinGame(int id, String username);
+    SerializableGame joinGame(int id, String username) throws RemoteException;
 
-    void startGame(SerializableGame game);
+    void startGame(SerializableGame game) throws RemoteException;
     
-    void WriteLine(String text, String username);
+    void WriteLine(String text, String username) throws RemoteException;
 
 }
